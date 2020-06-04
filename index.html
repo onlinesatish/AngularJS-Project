@@ -1,44 +1,47 @@
 <!DOCTYPE html>
-<html ng-app="amaApp" ng-controller="amaCtrl" >
-	<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>AngularJS Project</title>
-	<!-- Bootstrap core CSS -->
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-	<!-- Material Design Bootstrap -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.css" />
-	<link rel="stylesheet" href="css/main.css">
-	<base href="/AngularJS-Project/" >
-	</head>
-	<body data-toggle="collapse" data-target=".navbar-collapse.show">
-		
-		<header>
-			<div ng-include="'templates/header.html'" ></div>
-		</header>
-		
-		<main class="grey lighten-4">
-			<div  ui-view  ></div>
-		</main>
-		
-		<div class="teal"  ng-include="'templates/footer.html'" ></div>
-		
-		<!-- JQuery -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-		<!-- Bootstrap tooltips -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-		<!-- Bootstrap core JavaScript -->
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<!-- MDB core JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
-		<!-- AngularJS core JavaScript -->
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-		<!-- ui-router JavaScript -->
-		<script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
-		<!-- initialization JavaScript -->
-		<script src="js/init.js"></script>
-		<!-- app JavaScript -->
-		<script src="js/amaApp.js"></script>
-	</body>
-</html> 
+<html ng-app="amaApp" ng-controller="amaCtrl">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>AngularJS Project</title>
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <!--<base href="/AngularJS-Project/" >-->
+</head>
+
+<body data-toggle="collapse" data-target=".navbar-collapse.show">
+
+  <header>
+    <div ng-include="'templates/header.html'"></div>
+  </header>
+
+  <main class="grey lighten-4">
+    <div ui-view></div>
+  </main>
+
+  <div class="teal" ng-include="'templates/footer.html'"></div>
+
+  <!-- JQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+  <!-- AngularJS core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+  <!-- ui-router JavaScript -->
+  <script src="https://unpkg.com/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
+  <!-- initialization JavaScript -->
+  <script src="js/init.js"></script>
+  <!-- app JavaScript -->
+  <script src="js/amaApp.js"></script>
+</body>
+
+</html>
