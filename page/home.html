@@ -10,12 +10,28 @@
     php app.I need your help so I uploaded this page source code on github.
   </p>
 
-  <p class="text-center rem1d5 cyan darken-4 text-white ">Problems</p>
+  <p class="text-center rem1d5 bg-danger text-white ">Problems</p>
 
   <div class="container rem1d2 mb-3">
     <ol type="A." class="container">
-      <li><del>I want to remove <u>&nbsp#!&nbsp</u> from url but I couldn't do after reading many articles on it.</del> (This problem has solved with .htaccess.)</li>
+      <li><del>I want to remove <u><kbd>#!</kbd></u> from url but I couldn't do after reading many articles on it.</del> Problem Solved
+        <pre class="bg-white">
+<code id="code" >
+# .htaccess code to remove #! from angularjs based website
+RewriteEngine on
+
+# Don't rewrite files or directories
+RewriteCond %{REQUEST_FILENAME} -f [OR]  
+RewriteCond %{REQUEST_FILENAME} -d  
+RewriteRule ^ - [L]
+
+# Rewrite everything else to index.html to allow html5 state links
+RewriteRule ^ index.html [L]  
+</code>
+</pre>
+      </li>
       <li>I couldn't use <u>wow.js with animate.css</u> as like simple app.</li>
     </ol>
   </div>
+
 </div>
