@@ -6,19 +6,19 @@ amaApp.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     .state({
       name: "home",
       url: "/",
-      templateUrl: "partials/home.html",
+      templateUrl: "page/home.html",
       controller: "amaCtrl"
     })
     .state({
       name: "about",
       url: "/about",
-      templateUrl: "partials/about.html",
+      templateUrl: "page/about.html",
       controller: "amaCtrl"
     })
     .state({
       name: "contact",
       url: "/contact",
-      templateUrl: "partials/contact.html",
+      templateUrl: "page/contact.html",
       controller: "amaCtrl"
     });
   $urlRouterProvider.otherwise("/");
